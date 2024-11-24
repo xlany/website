@@ -96,6 +96,20 @@ main {
     line-height: 1.6; /* Keeps text within list items easy to read */
 }
 
+.copy-notification {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: fadeOut 2s forwards;
+    pointer-events: none;
+    position: absolute;
+    white-space: nowrap;
+}
+
 /* Footer */
 footer {
     position: fixed;
@@ -138,5 +152,17 @@ footer {
     footer {
         left: 0;
         width: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
